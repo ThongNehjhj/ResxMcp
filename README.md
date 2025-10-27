@@ -1,4 +1,6 @@
 # 🌐 ResxMcp
+<p align="right">🌏 <a href="README.zh-CN.md">中文说明</a></p>
+
 > A lightweight MCP server for managing `.resx` localization files  
 > 一个用于管理 `.resx` 本地化资源文件的轻量级 MCP 服务器
 

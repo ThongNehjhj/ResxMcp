@@ -1,5 +1,5 @@
 # 🌐 ResxMcp
-
+<p align="right">🌏 <a href="README.md">English</a></p>
 一个用于管理 `.resx` 多语言资源文件的轻量级 **MCP 协议服务器**，支持 **所有兼容 MCP 的客户端**（Gemini CLI、Claude Desktop、Cursor 等）。
 
 <p align="center">
